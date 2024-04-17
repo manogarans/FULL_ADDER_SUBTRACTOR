@@ -68,13 +68,14 @@ or(carry,w2,w3,w4);
 endmodule
 ```
 ## Full Subtractor
+```
 module fullsub(a,b,Bin,BO,DIFF);
 input a,b,Bin;
 output BO,DIFF;
 assign DIFF = a ^ b ^ Bin;
   assign BO = (a & b) | ((a ^ b) & Bin);
 endmodule
-
+```
 ## RTL Schematic
 ![Screenshot 2024-04-17 181330](https://github.com/manogarans/FULL_ADDER_SUBTRACTOR/assets/139331782/a9fc4399-b1f5-49a9-aefd-33af042d66e3)
 
